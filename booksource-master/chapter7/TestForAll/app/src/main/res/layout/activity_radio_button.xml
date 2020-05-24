@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbt_list_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/footer_icon_list_view_selector"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            android:text="listView"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rbt_recycler_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/footer_icon_recycler_selector"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            android:text="recyclerView"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rbt_others"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/footer_icon_others_selector"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            android:text="Others"
+            android:textSize="18sp" />
+    </RadioGroup>
+</LinearLayout>
